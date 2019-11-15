@@ -9,7 +9,9 @@
 
 ![screenshot](https://camo.githubusercontent.com/edc65aa854e00ac2021a8bda200bc7b606a6ed14/68747470733a2f2f692e696d6775722e636f6d2f786463686451612e706e67)
 
-Please provide feedback by filing an issue to [report a a bug](https://github.com/round/TypeSmart-beta/issues/new?labels=bug&template=bug.md) or [suggest a feature](https://github.com/round/TypeSmart-beta/issues/new?labels=feature&template=feature.md).
+Please be sure to provide feedback by filing an issue to [report a a bug](https://github.com/round/TypeSmart-beta/issues/new?labels=bug&template=bug.md) or [suggest a feature](https://github.com/round/TypeSmart-beta/issues/new?labels=feature&template=feature.md).
+
+## Replacement
 
 TypeSmart performs the following corrections as you type:
 
@@ -30,7 +32,7 @@ Apostrophe **'** s|Apostrophe **’** s
 Two␣ ␣spaces|One␣space
 Two dashes **--**|**&ndash;** Endash
 Three dashes **---**|**&mdash;** Emdash
-Three periods ***...***|**&hellip;** Ellipsis
+Three periods ***. . .***|**&hellip;** Ellipsis
 |__*__ Bullet|• Bullet
 
 
