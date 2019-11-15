@@ -1,5 +1,7 @@
 # TypeSmart (Beta)
 
+## Installation
+
 1. Download the latest release.
 2. Go to 'Extensions' in Chrome.
 3. Enable 'Developer Mode' in the top right.
@@ -10,15 +12,22 @@
 Please provide feedback by filing an issue to [report a a bug](https://github.com/round/TypeSmart-beta/issues/new?labels=bug&template=bug.md) or [suggest a feature](https://github.com/round/TypeSmart-beta/issues/new?labels=feature&template=feature.md).
 
 
+## Replacement
+
 TypeSmart performs the following corrections as you type:
+
+### Formatting
 
 Input|Replace
 -:|:-
 **"** Quote **"**|**“** Quote **”**
 Apostrophe **'** s|Apostrophe **’** s
-~~ |≈
-<=|≤
-|>=|≥
+|* Bullet|• Bullet
+
+### Mathematical
+
+Input|Replace
+-:|:-
 1/2|½
 1/3|⅓
 1/4|¼
@@ -26,20 +35,34 @@ Apostrophe **'** s|Apostrophe **’** s
 ^2|²
 ^3|³|
 ^deg|°
-^tm|™
 timesx|×
+~~ |≈
+<=|≤
+|>=|≥
+
+### Arrows
+
+Input|Replace
+-:|:-
 ->|→
 <-|←
 |>>|≫
 <<|≪
-|* Bullet|• Bullet
+
+### Symbols
+
+Input|Replace
+-:|:-
 numero|№
 c/o|℅
-(r)|®
-(r)|©
 _a|𝑎
 _b|𝑏
 _c|𝑐
 _x|𝑥
 _y|𝑦
 _z|𝑧
+^tm|™
+(r)|®
+(r)|©
+
+
