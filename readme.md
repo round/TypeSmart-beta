@@ -20,14 +20,20 @@ TypeSmart performs the following corrections as you type:
 
 Input|Replace
 -:|:-
-**"** Quote **"**|**“** Quote **”**
+**"** Quotes **"**|**“** Quotes **”**
 Apostrophe **'** s|Apostrophe **’** s
-|* Bullet|• Bullet
+|__*__ Bullet|• Bullet
+Two␣ ␣spaces|One␣space
 
-### Mathematical
+### Math
 
 Input|Replace
 -:|:-
+timesx|×
+/=|≠
+~~ |≈
+<=|≤
+|>=|≥
 1/2|½
 1/3|⅓
 1/4|¼
@@ -35,12 +41,8 @@ Input|Replace
 ^2|²
 ^3|³|
 ^deg|°
-timesx|×
-~~ |≈
-<=|≤
-|>=|≥
 
-### Arrows
+### Symbols
 
 Input|Replace
 -:|:-
@@ -48,6 +50,7 @@ Input|Replace
 <-|←
 |>>|≫
 <<|≪
+|**|✱
 
 ### Symbols
 
@@ -64,5 +67,3 @@ _z|𝑧
 ^tm|™
 (r)|®
 (r)|©
-
-
