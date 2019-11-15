@@ -16,7 +16,15 @@ Please provide feedback by filing an issue to [report a a bug](https://github.co
 
 TypeSmart performs the following corrections as you type:
 
-### Formatting
+<table>
+<tr>
+  <th>Formatting</th>
+  <th>Mathematical</th>
+  <th>Symbols</th>
+  <th>Letters</th>
+</tr>
+  
+<tr><td>
 
 Input|Replace
 -:|:-
@@ -25,7 +33,8 @@ Apostrophe **'** s|Apostrophe **’** s
 |__*__ Bullet|• Bullet
 Two␣ ␣spaces|One␣space
 
-### Math
+
+</td><td>
 
 Input|Replace
 -:|:-
@@ -42,7 +51,7 @@ timesx|×
 ^3|³|
 ^deg|°
 
-### Symbols
+</td><td>
 
 Input|Replace
 -:|:-
@@ -52,7 +61,7 @@ Input|Replace
 <<|≪
 |**|✱
 
-### Symbols
+</td><td>
 
 Input|Replace
 -:|:-
@@ -67,3 +76,5 @@ _z|𝑧
 ^tm|™
 (r)|®
 (r)|©
+
+</td></tr></table>
