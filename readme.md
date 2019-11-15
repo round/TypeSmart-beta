@@ -24,7 +24,7 @@ TypeSmart performs the following corrections as you type:
   <th>Letters</th>
 </tr>
   
-<tr><td>
+<tr><td valign='top'>
 
 Input|Replace
 -:|:-
@@ -34,7 +34,7 @@ Apostrophe **'** s|Apostrophe **’** s
 Two␣ ␣spaces|One␣space
 
 
-</td><td>
+</td><td valign='top'>
 
 Input|Replace
 -:|:-
@@ -51,7 +51,7 @@ timesx|×
 ^3|³|
 ^deg|°
 
-</td><td>
+</td><td valign='top'>
 
 Input|Replace
 -:|:-
@@ -61,7 +61,7 @@ Input|Replace
 <<|≪
 |**|✱
 
-</td><td>
+</td><td valign='top'>
 
 Input|Replace
 -:|:-
