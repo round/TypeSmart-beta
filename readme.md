@@ -12,34 +12,34 @@ Please provide feedback by filing an issue to [report a a bug](https://github.co
 
 TypeSmart performs the following corrections as you type:
 
-|Input|Replace|
-|-:|:-|
-|**"** Quote **"**|**“** Quote **”**|
-|Apostrophe **'** s|Apostrophe **’** s|
-|~~ |≈| 
-|<=|≤|
-|>=|≥|
-|1/2|½|
-|1/3|⅓|
-|1/4|¼|
-|2/3|⅔|
-|^2|²|
-|^3|³|
-|^deg|°|
-|^tm|™|
-|timesx|×|
-|->|→|
-|<-|←|
-|>>|≫|
-|<<|≪|
-|* Bullet|• Bullet|
-|numero|№|
-|c/o|℅|
-|(R)|®|
-|(C)|©|
-|_a|𝑎|
-|_b|𝑏|
-|_c|𝑐|
-|_x|𝑥|
-|_y|𝑦|
-|_z|𝑧|
+Input|Replace
+-:|:-
+**"** Quote **"**|**“** Quote **”**
+Apostrophe **'** s|Apostrophe **’** s
+~~ |≈
+<=|≤
+|>=|≥
+1/2|½
+1/3|⅓
+1/4|¼
+2/3|⅔
+^2|²
+^3|³|
+^deg|°
+^tm|™
+timesx|×
+->|→
+<-|←
+|>>|≫
+<<|≪
+|* Bullet|• Bullet
+numero|№
+c/o|℅
+(r)|®
+(r)|©
+_a|𝑎
+_b|𝑏
+_c|𝑐
+_x|𝑥
+_y|𝑦
+_z|𝑧
