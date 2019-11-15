@@ -11,9 +11,6 @@
 
 Please provide feedback by filing an issue to [report a a bug](https://github.com/round/TypeSmart-beta/issues/new?labels=bug&template=bug.md) or [suggest a feature](https://github.com/round/TypeSmart-beta/issues/new?labels=feature&template=feature.md).
 
-
-## Replacement
-
 TypeSmart performs the following corrections as you type:
 
 <table>
@@ -28,10 +25,14 @@ TypeSmart performs the following corrections as you type:
 
 Input|Replace
 -:|:-
-**"** Quotes **"**|**“** Quotes **”**
+**"** Regular Quotes **"**|**“** Smart Quotes **”**
 Apostrophe **'** s|Apostrophe **’** s
-|__*__ Bullet|• Bullet
 Two␣ ␣spaces|One␣space
+Two dashes **--**|**&ndash;** Endash
+Three dashes **---**|**&mdash;** Emdash
+Three periods ***...***|**&hellip;** Ellipsis
+|__*__ Bullet|• Bullet
+
 
 
 </td><td valign='top'>
@@ -73,8 +74,12 @@ _c|𝑐
 _x|𝑥
 _y|𝑦
 _z|𝑧
-^tm|™
+^tm|&trade;
 (r)|®
-(r)|©
+(r)|&copy;
 
 </td></tr></table>
+
+## Demo
+
+![screenshot](https://giant.gfycat.com/FamousDirtyBasenji.gif)
