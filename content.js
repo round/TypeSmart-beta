@@ -62,6 +62,86 @@ var processTextField = function (activeElement) {
   return getValue(activeElement);
 };
 
+var easyReplacements = {
+	"^2": "\xB2",
+	"^3": "\xB3",
+	"1/2": "\xBD",
+	"1/3": "\x2153",
+	"1/4": "\xBC",
+	"2/3": "\x2154",
+
+	"_A": "𝐴",
+	"_B": "𝐵",
+	"_C": "𝐶",
+
+	"_a": "𝑎",
+	"_b": "𝑏",
+	"_c": "𝑐",
+
+	"_X": "𝑋",
+	"_Y": "𝑌",
+	"_Z": "𝑍",
+
+	"_x": "𝑥",
+	"_y": "𝑦",
+	"_z": "𝑧",
+
+	"~~": "\u2248",
+	"/=": "\u2260",
+
+	"<=": "\u2264",
+	">=": "\u2265",
+
+	">>": "\xBB",
+	"<<": "\xAB",
+
+	"^deg": "\xB0",
+	"^tm": "\u2122",
+
+	"*x": "\xD7",
+	"->": "\u2192",
+	"<-": "\u2190",
+
+	" .": ".",
+
+	"*** ": "\u2731",
+	"** ": "\u273D",
+	"* ": "\u2022 ",
+
+	"c/o": "\u2105",
+	"numero": "\u2116",
+
+	"(r)": "\xAE",
+	"(c)": "\xA9"
+}
+var fastRegiPattern; 
+
+/** Escaping easy replacement keys for safe usage in regex **/
+var escapeRegExp = function(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
+
+/** single regular expression for simple replacements **/
+var fastRegi  = function () {
+  if (fastRegiPattern) return fastRegiPattern;
+  
+  const regString = Object.keys(easyReplacements).map(escapeRegExp).join('|')
+  fastRegiPattern = new RegExp(regString, 'gi')
+
+  // rudimentary support for case-insensitivity
+  for (key in easyReplacements) {
+    easyReplacements[key.toUpperCase()] = easyReplacements[key]
+  }
+  return fastRegiPattern;
+}
+
+/** processor function for the single regex for simple replacements **/
+var fastReplacements = function(el) {
+  if (el in easyReplacements) {
+    return easyReplacements[el];
+  }
+}
+
 var replaceTypewriterPunctuation = function (g) {
   var splitterRegex = /(?:```[\S\s]*?(?:```|$))|(?:`[\S\s]*?(?:`|$))|(?:\{code(?:\:.*?)?\}[\S\s]*?(?:\{code\}|$))|(?:\{noformat\}[\S\s]*?(?:\{noformat\}|$))/gi;
   var f = false,
@@ -107,69 +187,10 @@ var regex = function (g) {
   .replace(/‘(cause)/gi, "’$1")
   .replace(/‘(n)/gi, "’$1")
 
-	//additional replacements
+   //additional replacements
+   .replace(fastRegi(), fastReplacements)
 
-	.replace("^2", "\xB2")
-	.replace("^3", "\xB3")
-	.replace("1/2", "\xBD")
-	.replace("1/3", "\x2153")
-	.replace("1/4", "\xBC")
-	.replace("2/3", "\x2154")
-
-	.replace("_A", "𝐴")
-	.replace("_B", "𝐵")
-	.replace("_C", "𝐶")
-
-	.replace("_a", "𝑎")
-	.replace("_b", "𝑏")
-	.replace("_c", "𝑐")
-
-	.replace("_X", "𝑋")
-	.replace("_Y", "𝑌")
-	.replace("_Z", "𝑍")
-
-	.replace("_x", "𝑥")
-	.replace("_y", "𝑦")
-	.replace("_z", "𝑧")
-
-	.replace("~~", "\u2248")
-	.replace("/=", "\u2260")
-
-	.replace("<=", "\u2264")
-	.replace(">=", "\u2265")
-
-	.replace(">>", "\xBB")
-	.replace("<<", "\xAB")
-
-	.replace("^deg", "\xB0")
-	// .replace("^tm", "™")
-	.replace("^tm", "\u2122")
-
-	.replace("*x", "\xD7")
-
-	// .replace("<->", "↔") //use regex for char quant
-	.replace("->", "\u2192")
-	.replace("<-", "\u2190")
-
-	.replace(" .", ".")
-	// .replace("“*", "❝")
-	// .replace("*”", "❞")
-
-	// .replace("!!", "‼")
-	// .replace("?!", "⁈")
-	// .replace("!?", "⁉")
-
-	.replace("*** ", "\u2731")
-	.replace("** ", "\u273D")
-	.replace("* ", "\u2022 ")
-
-	.replace("c/o", "\u2105")
-	.replace("numero", "\u2116")
-
-	.replace("(r)", "\xAE") //make case-insensitive
-	.replace("(r)", "\xA9")
-
-	.replace(/ +(?= )/g,'');
+   .replace(/ +(?= )/g,'');
 
 };
 
