@@ -147,7 +147,7 @@ var regex = function (g) {
 
 	.replace("*x", "\xD7")
 
-	// .replace("<->", "↔")
+	// .replace("<->", "↔") //use regex for char quant
 	.replace("->", "\u2192")
 	.replace("<-", "\u2190")
 
@@ -159,14 +159,15 @@ var regex = function (g) {
 	// .replace("?!", "⁈")
 	// .replace("!?", "⁉")
 
+	.replace("*** ", "\u2731")
+	.replace("** ", "\u273D")
 	.replace("* ", "\u2022 ")
-	.replace("**", "\u2731")
 
 	.replace("c/o", "\u2105")
 	.replace("numero", "\u2116")
 
-	.replace("(R)", "\xAE")
-	.replace("(C)", "\xA9")
+	.replace("(r)", "\xAE") //make case-insensitive
+	.replace("(r)", "\xA9")
 
 	.replace(/ +(?= )/g,'');
 
@@ -225,7 +226,3 @@ var setSelection = function (activeElement, correctCaretPos) {
 var isTextNode = function (node) {
   return node.nodeType === 3;
 };
-
-// document.addEventListener('input', e => {
-//   isTextField(e.target) && processTextField(e.target);
-// });
