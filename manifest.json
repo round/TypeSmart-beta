@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Typographer",
-	"version": "1.0",
-	"description": "Replace typewriter quotes, apostrophes, ellipses and dashes with their typographically correct counterparts as you type.",
+	"name": "TypeSmart",
+	"version": "0.5",
+	"description": "Automatically format quotes, apostrophes, dashes, and symbols with their typographically correct characters.",
 	"author": "Maxim Leyzerovich",
 	"icons":
 	{

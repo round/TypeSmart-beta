@@ -159,6 +159,7 @@ var regex = function (g) {
 	// .replace("!?", "⁉")
 
 	.replace("* ", "• ")
+	.replace("**", "✱")
 
 	.replace("c/o", "℅")
 	.replace("numero", "№")
