@@ -27,7 +27,7 @@ TypeSmart performs the following corrections as you type:
 
 Input|Replace
 -:|:-
-<strong>"</strong>Regular Quotes<strong>"</strong>|<strong>&ldquo;</strong>Smart Quotes<strong>&rdquo;</strong>
+<strong>"</strong>Regular&nbsp;Quotes<strong>"</strong>|<strong>&ldquo;</strong>Smart&nbsp;Quotes<strong>&rdquo;</strong>
 Apostrophe<strong>'</strong>s|Apostrophe<strong>&rsquo;</strong>s
 Two&blank;&thinsp;&blank;spaces|One&blank;space
 Two dashes **-&thinsp;-**|**&ndash;** Endash
@@ -62,7 +62,7 @@ Input|Replace
 <-|&larr;
 |>>|&raquo;
 <<|&laquo;
-|**|&#10033;
+|**|
 
 </td><td valign='top'>
 
