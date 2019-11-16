@@ -42,28 +42,48 @@
 
 
 
+function indicateEnabled() {
+  chrome.browserAction.setIcon({path: {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  }});
+}
+
+function indicateDisabled() {
+  chrome.browserAction.setIcon({path: {
+    "16": "icon16-disabled.png",
+    "32": "icon32-disabled.png",
+    "64": "icon64-disabled.png",
+    "128": "icon128-disabled.png"
+  }});
+}
+
 chrome.storage.sync.get('state', function(data) { //initial; check
    if (data.state === 'on') {
-     chrome.browserAction.setBadgeText({ text: 'ON' });
+     // chrome.browserAction.setBadgeText({ text: 'ON' });
+     indicateEnabled();
    } else {
-     chrome.browserAction.setBadgeText({ text: 'OFF' });
+     indicateDisabled();
   }
 });
+
 
 chrome.browserAction.onClicked.addListener(function(tab) { //toggle
    chrome.storage.sync.get('state', function(data) {
      if (data.state === 'on') {
         chrome.storage.sync.set({state: 'off'});
-        chrome.browserAction.setBadgeText({ text: 'OFF' });
-
+        // chrome.browserAction.setBadgeText({ text: 'OFF' });
+        indicateDisabled();
         chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
         chrome.tabs.sendMessage(tabs[0].id, {action: "disableListener"});
     });
 
      } else {
        chrome.storage.sync.set({state: 'on'});
-       chrome.browserAction.setBadgeText({ text: 'ON' });
-
+       // chrome.browserAction.setBadgeText({ text: 'ON' });
+       indicateEnabled();
        chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
        chrome.tabs.sendMessage(tabs[0].id, {action: "enableListener"});
      });
