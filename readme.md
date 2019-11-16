@@ -1,4 +1,4 @@
-# TypeSmart (Beta)
+# &nbsp;![T](https://raw.githubusercontent.com/round/TypeSmart-beta/master/icon32.png)ypeSmart (Beta)
 
 ## Installation
 
