@@ -29,10 +29,10 @@ Input|Replace
 -:|:-
 <strong>"</strong>Regular Quotes<strong>"</strong>|<strong>&ldquo;</strong>Smart Quotes<strong>&rdquo;</strong>
 Apostrophe<strong>'</strong>s|Apostrophe<strong>&rsquo;</strong>s
-Two&blank; &blank;spaces|One&blank;space
-Two dashes **--**|**&ndash;** Endash
-Three dashes **---**|**&mdash;** Emdash
-Three periods ***. . .***|**&hellip;** Ellipsis
+Two&blank;&thinsp;&blank;spaces|One&blank;space
+Two dashes **-&thinsp;-**|**&ndash;** Endash
+Three dashes **-&hairsp;-&hairsp;-**|**&mdash;** Emdash
+Three periods ***.&thinsp;.&thinsp;.***|**&hellip;** Ellipsis
 |__*__ Bullet|&bull; Bullet
 
 
@@ -60,8 +60,8 @@ Input|Replace
 -:|:-
 ->|&rarr;
 <-|&larr;
-|>>|≫&raquo;
-<<|≪&laquo;
+|>>|&raquo;
+<<|&laquo;
 |**|&#10033;
 
 </td><td valign='top'>
