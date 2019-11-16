@@ -60,7 +60,9 @@ Replace|With
 <-|&larr;
 |>>|&raquo;
 <<|&laquo;
-|**|✱|
+|**|✽|
+|***|✱|
+
 
 </td><td valign='top'>
 
