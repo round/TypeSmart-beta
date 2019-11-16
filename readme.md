@@ -2,8 +2,8 @@
 
 ## Installation
 
-1. Download the latest release.
-2. Go to 'Extensions' in Chrome.
+1. Download the [latest release](https://github.com/round/TypeSmart-beta/releases/latest).
+2. Go to 'Extensions' in Chrome (`chrome://extensions`).
 3. Enable 'Developer Mode' in the top right.
 4. Click 'Load Unpacked' and select the unzipped extension folder.
 
