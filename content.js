@@ -109,12 +109,12 @@ var regex = function (g) {
 
 	//additional replacements
 
-	.replace("^2", "²")
-	.replace("^3", "³")
-	.replace("1/2", "½")
-	.replace("1/3", "⅓")
-	.replace("1/4", "¼")
-	.replace("2/3", "⅔")
+	.replace("^2", "\xB2")
+	.replace("^3", "\xB3")
+	.replace("1/2", "\xBD")
+	.replace("1/3", "\x2153")
+	.replace("1/4", "\xBC")
+	.replace("2/3", "\x2154")
 
 	.replace("_A", "𝐴")
 	.replace("_B", "𝐵")
@@ -132,40 +132,41 @@ var regex = function (g) {
 	.replace("_y", "𝑦")
 	.replace("_z", "𝑧")
 
-	.replace("~~", "≈")
-	.replace("/=", "≠")
+	.replace("~~", "\u2248")
+	.replace("/=", "\u2260")
 
-	.replace("<=", "≤")
-	.replace(">=", "≥")
+	.replace("<=", "\u2264")
+	.replace(">=", "\u2265")
 
-	.replace(">>", "≫")
-	.replace("<<", "≪")
+	.replace(">>", "\xBB")
+	.replace("<<", "\xAB")
 
-	.replace("^deg", "°")
-	.replace("^tm", "™")
+	.replace("^deg", "\xB0")
+	// .replace("^tm", "™")
+	.replace("^tm", "\u2122")
 
-	.replace("timesx", "×")
+	.replace("timesx", "\xD7")
 
 	// .replace("<->", "↔")
-	.replace("->", "→")
-	.replace("<-", "←")
+	.replace("->", "\u2192")
+	.replace("<-", "\u2190")
 
 	.replace(" .", ".")
-	.replace("“*", "❝")
-	.replace("*”", "❞")
+	// .replace("“*", "❝")
+	// .replace("*”", "❞")
 
 	// .replace("!!", "‼")
 	// .replace("?!", "⁈")
 	// .replace("!?", "⁉")
 
-	.replace("* ", "• ")
-	.replace("**", "✱")
+	.replace("* ", "\u2022 ")
+	.replace("**", "\u2731")
 
-	.replace("c/o", "℅")
-	.replace("numero", "№")
+	.replace("c/o", "\u2105")
+	.replace("numero", "\u2116")
 
-	.replace("(R)", "®")
-	.replace("(C)", "©")
+	.replace("(R)", "\xAE")
+	.replace("(C)", "\xA9")
 
 	.replace(/ +(?= )/g,'');
 
