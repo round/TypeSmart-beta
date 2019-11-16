@@ -25,21 +25,19 @@ TypeSmart performs the following corrections as you type:
 
 <tr><td valign='top'>
 
-Input|Replace
+Replace|With
 -:|:-
 <strong>"</strong>Regular&nbsp;Quotes<strong>"</strong>|<strong>&ldquo;</strong>Smart&nbsp;Quotes<strong>&rdquo;</strong>
 Apostrophe<strong>'</strong>s|Apostrophe<strong>&rsquo;</strong>s
-Two&blank;&thinsp;&blank;spaces|One&blank;space
-Two dashes **-&thinsp;-**|**&ndash;** Endash
-Three dashes **-&hairsp;-&hairsp;-**|**&mdash;** Emdash
-Three periods ***.&thinsp;.&thinsp;.***|**&hellip;** Ellipsis
+(Two spaces) &blank;&thinsp;&blank;|&blank; (One space)
+(Two dashes) **-&thinsp;-**|**&ndash;** (Endash)
+(Three dashes) **-&hairsp;-&hairsp;-**|**&mdash;** (Emdash)
+(Three periods) ***.&thinsp;.&thinsp;.***|**&hellip;** (Ellipsis)
 |__*__ Bullet|&bull; Bullet
-
-
 
 </td><td valign='top'>
 
-Input|Replace
+Replace|With
 -:|:-
 *x|&times;
 /=|&ne;
@@ -56,7 +54,7 @@ Input|Replace
 
 </td><td valign='top'>
 
-Input|Replace
+Replace|With
 -:|:-
 ->|&rarr;
 <-|&larr;
@@ -66,7 +64,7 @@ Input|Replace
 
 </td><td valign='top'>
 
-Input|Replace
+Replace|With
 -:|:-
 numero|&numero;
 c/o|&incare;
