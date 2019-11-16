@@ -51,6 +51,8 @@ function indicateEnabled() {
   }});
 }
 
+//update app tooltip
+
 function indicateDisabled() {
   chrome.browserAction.setIcon({path: {
     "16": "icon16-disabled.png",
