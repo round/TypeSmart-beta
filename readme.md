@@ -62,7 +62,7 @@ Input|Replace
 <-|&larr;
 |>>|&raquo;
 <<|&laquo;
-|**|
+|**|✱|
 
 </td><td valign='top'>
 
