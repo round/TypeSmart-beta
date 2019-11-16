@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+A description of what the bug is and what website it happens on.
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.
@@ -17,4 +17,4 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots or screen recordings to help explain.
 
 **Additional context**
-Add any other context about the problem here.
+Add any other context about the problem.
