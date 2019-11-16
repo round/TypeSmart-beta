@@ -145,7 +145,7 @@ var regex = function (g) {
 	// .replace("^tm", "™")
 	.replace("^tm", "\u2122")
 
-	.replace("timesx", "\xD7")
+	.replace("*x", "\xD7")
 
 	// .replace("<->", "↔")
 	.replace("->", "\u2192")

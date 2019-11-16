@@ -22,7 +22,7 @@ TypeSmart performs the following corrections as you type:
   <th>Symbols</th>
   <th>Letters</th>
 </tr>
-  
+
 <tr><td valign='top'>
 
 Input|Replace
@@ -41,7 +41,7 @@ Three periods ***.&thinsp;.&thinsp;.***|**&hellip;** Ellipsis
 
 Input|Replace
 -:|:-
-timesx|&times;
+*x|&times;
 /=|&ne;
 ~~ |&asymp;
 <=|&le;
