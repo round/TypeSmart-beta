@@ -11,9 +11,9 @@
 
 Please be sure to provide feedback by filing an issue to [report a a bug](https://github.com/round/TypeSmart-beta/issues/new?labels=bug&template=bug.md) or [suggest a feature](https://github.com/round/TypeSmart-beta/issues/new?labels=feature&template=feature.md).
 
-## Replacement
+## Usage
 
-TypeSmart performs the following corrections as you type:
+Click the icon to toggle the extension globally. When enabled, TypeSmart performs the following corrections as you type:
 
 <table>
 <tr>
@@ -85,3 +85,7 @@ _z|𝑧
 ## Demo
 
 ![screenshot](https://giant.gfycat.com/FamousDirtyBasenji.gif)
+
+## Considerations
+
+TypeSmart will not work in Google Docs, but it will work in GMail.
