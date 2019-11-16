@@ -27,13 +27,13 @@ TypeSmart performs the following corrections as you type:
 
 Input|Replace
 -:|:-
-**"** Regular Quotes **"**|**“** Smart Quotes **”**
-Apostrophe **'** s|Apostrophe **’** s
-Two␣ ␣spaces|One␣space
+<strong>"</strong>Regular Quotes<strong>"</strong>|<strong>&ldquo;</strong>Smart Quotes<strong>&rdquo;</strong>
+Apostrophe<strong>'</strong>s|Apostrophe<strong>&rsquo;</strong>s
+Two&blank; &blank;spaces|One&blank;space
 Two dashes **--**|**&ndash;** Endash
 Three dashes **---**|**&mdash;** Emdash
 Three periods ***. . .***|**&hellip;** Ellipsis
-|__*__ Bullet|• Bullet
+|__*__ Bullet|&bull; Bullet
 
 
 
@@ -41,35 +41,35 @@ Three periods ***. . .***|**&hellip;** Ellipsis
 
 Input|Replace
 -:|:-
-timesx|×
-/=|≠
-~~ |≈
-<=|≤
-|>=|≥
-1/2|½
-1/3|⅓
-1/4|¼
-2/3|⅔
-^2|²
-^3|³|
-^deg|°
+timesx|&times;
+/=|&ne;
+~~ |&asymp;
+<=|&le;
+|>=|&ge;
+1/2|&frac12;
+1/3|&frac13;
+1/4|&frac14;
+2/3|&frac23;
+^2|&sup2;
+^3|&sup3;
+^deg|&deg;
 
 </td><td valign='top'>
 
 Input|Replace
 -:|:-
-->|→
-<-|←
-|>>|≫
-<<|≪
-|**|✱
+->|&rarr;
+<-|&larr;
+|>>|≫&raquo;
+<<|≪&laquo;
+|**|&#10033;
 
 </td><td valign='top'>
 
 Input|Replace
 -:|:-
-numero|№
-c/o|℅
+numero|&numero;
+c/o|&incare;
 _a|𝑎
 _b|𝑏
 _c|𝑐
@@ -77,7 +77,7 @@ _x|𝑥
 _y|𝑦
 _z|𝑧
 ^tm|&trade;
-(r)|®
+(r)|&reg;
 (r)|&copy;
 
 </td></tr></table>
