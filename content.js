@@ -175,8 +175,8 @@ var regex = function (g) {
   .replace(new RegExp("(\\s|^|\\(|\\>|\\])(')(?=[^>\\]]*(<|\\[|$))", 'g'), "$1‘")
   .replace(new RegExp('(.)(\")(?=[^>\\]]*(<|\\[|$))', 'g'), "$1”")
   .replace(new RegExp("(.)(')(?=[^>\\]]*(<|\\[|$))", 'g'), "$1’")
-  .replace(/(\w|\s)-{3}(\w|\s)/g, "$1—$2")
-  .replace(/(\w|\s)-{2}(\w|\s)/g, "$1–$2")
+  .replace(/(\w|\s)-{3}(\w|\s)/g, "$1\u2014$2") // em dash
+  .replace(/(\w|\s)-{2}(\w|\s)/g, "$1\u2013$2") // en dash
   .replace(/(\w|\s)–-(\w|\s)/g, "$1—$2")
   .replace(/([^.…])\.{3}([^.…])/g, "$1…$2")
 
