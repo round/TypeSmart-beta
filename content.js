@@ -190,9 +190,7 @@ var regex = function (g) {
   .replace(/‘(n)/gi, "’$1")
 
    //additional replacements
-   .replace(fastRegi(), fastReplacements)
-
-   .replace(/ +(?= )/g,'');
+   .replace(fastRegi(), fastReplacements);
 
 };
 
