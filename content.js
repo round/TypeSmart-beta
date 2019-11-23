@@ -1,4 +1,4 @@
-// ﻿(function() {
+// (function() {
 // 	console.log('content.js loaded');
 // })();
 
@@ -66,9 +66,9 @@ var easyReplacements = {
 	"^2": "\xB2",
 	"^3": "\xB3",
 	"1/2": "\xBD",
-	"1/3": "\x2153",
+	"1/3": "\u2153",
 	"1/4": "\xBC",
-	"2/3": "\x2154",
+	"2/3": "\u2154",
 
 	"_A": "𝐴",
 	"_B": "𝐵",
@@ -110,6 +110,7 @@ var easyReplacements = {
 
 	"c/o": "\u2105",
 	"numero": "\u2116",
+	"shrug" : "¯\\_(ツ)_/¯",
 
 	"(r)": "\xAE",
 	"(c)": "\xA9"
@@ -130,6 +131,7 @@ var fastRegi  = function () {
 
   // rudimentary support for case-insensitivity
   for (key in easyReplacements) {
+    if (key.charAt(0) == "_") return;
     easyReplacements[key.toUpperCase()] = easyReplacements[key]
   }
   return fastRegiPattern;
@@ -173,8 +175,8 @@ var regex = function (g) {
   .replace(new RegExp("(\\s|^|\\(|\\>|\\])(')(?=[^>\\]]*(<|\\[|$))", 'g'), "$1‘")
   .replace(new RegExp('(.)(\")(?=[^>\\]]*(<|\\[|$))', 'g'), "$1”")
   .replace(new RegExp("(.)(')(?=[^>\\]]*(<|\\[|$))", 'g'), "$1’")
-  .replace(/(\w|\s)-{3}(\w|\s)/g, "$1—$2")
-  .replace(/(\w|\s)-{2}(\w|\s)/g, "$1–$2")
+  .replace(/(\w|\s)-{3}(\w|\s)/g, "$1\u2014$2") // em dash
+  .replace(/(\w|\s)-{2}(\w|\s)/g, "$1\u2013$2") // en dash
   .replace(/(\w|\s)–-(\w|\s)/g, "$1—$2")
   .replace(/([^.…])\.{3}([^.…])/g, "$1…$2")
 
@@ -188,9 +190,7 @@ var regex = function (g) {
   .replace(/‘(n)/gi, "’$1")
 
    //additional replacements
-   .replace(fastRegi(), fastReplacements)
-
-   .replace(/ +(?= )/g,'');
+   .replace(fastRegi(), fastReplacements);
 
 };
 
