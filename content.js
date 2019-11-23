@@ -110,12 +110,12 @@ var easyReplacements = {
 
 	"c/o": "\u2105",
 	"numero": "\u2116",
-	"shrug" : "¯\\_(ツ)_/¯",
+	// "shrug" : "¯\\_(ツ)_/¯",
 
 	"(r)": "\xAE",
 	"(c)": "\xA9"
 }
-var fastRegiPattern; 
+var fastRegiPattern;
 
 /** Escaping easy replacement keys for safe usage in regex **/
 var escapeRegExp = function(string) {
@@ -125,7 +125,7 @@ var escapeRegExp = function(string) {
 /** single regular expression for simple replacements **/
 var fastRegi  = function () {
   if (fastRegiPattern) return fastRegiPattern;
-  
+
   const regString = Object.keys(easyReplacements).map(escapeRegExp).join('|')
   fastRegiPattern = new RegExp(regString, 'gi')
 
